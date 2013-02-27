@@ -1,0 +1,5 @@
+#define GET(y, x) public y get##x() { return x; }
+#define SET(y, x) public void set##x(y in##x) { this.x = in##x; }
+#define GETSET(y, x)\
+public y get##x() { return x; } \
+public void set##x(y in##x) { this.x = in##x; }
